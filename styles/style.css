@@ -1,0 +1,101 @@
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; 
+}
+main {
+    min-height: calc(100vh - (2*56px));
+}
+main div.parallax {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-list{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    padding-top: 1cm
+}
+.img-link{
+    display:flex;
+    border: 3px solid red;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    --tw-bg-opacity: 1;
+    background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+
+}
+.img-link img{
+    width:120px;
+    height: 75px;
+    opacity: 0.7
+}
+.img-link:hover img {
+    transition-duration: 200ms;
+    opacity: 0.4;
+}
+.img-link div{
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+main div.parallax.accueil {
+    background-image: url("./../images/hero_accueil.png");
+}
+main div.parallax.isekai {
+    background-image: url("./../images/hero_isekai.jpeg");
+}
+
+
+main div.main-content {
+    height: 100%;
+    margin-top: -110px;
+}
+main div.main-content h1 {
+    background: linear-gradient(transparent, black);
+    color: white;
+    padding-top: 70px;
+    padding-left: 20px;
+}
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.font-bold {
+    font-weight: 700;
+}
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.border-slate-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+.border-b-2 {
+    border-bottom-width: 2px;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+.btn img.petite {
+    width: 250px;
+    height: auto;
+}
+.btn img.moyenne {
+    width: 500px;
+    height: auto;
+}
