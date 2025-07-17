@@ -15,4 +15,15 @@ var initModal = function(){
 
 document.addEventListener("DOMContentLoaded", function() {
     initModal();
+
+    // Arrêter la vidéo YouTube à la fermeture du modal
+    let modals = document.querySelectorAll('.modal');
+    modals.forEach(function(modal) {
+        modal.addEventListener('hidden.bs.modal', function () {
+            let iframe = modal.querySelector('iframe');
+            if (iframe) {
+                iframe.setAttribute('src', '');
+            }
+        });
+    });
 });
